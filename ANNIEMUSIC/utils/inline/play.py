@@ -23,12 +23,8 @@ def track_markup(_, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
     ]
@@ -80,14 +76,11 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
+        
     ]
 
     return buttons
@@ -136,12 +129,8 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
     ]
@@ -166,12 +155,8 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
     ]
@@ -190,12 +175,8 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
     ]
@@ -210,12 +191,8 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
         [
@@ -240,12 +217,8 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ👑",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
      ]
@@ -282,12 +255,8 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
     ]
@@ -316,12 +285,8 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
     ]
@@ -345,12 +310,8 @@ def panel_markup_2(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
     ]
@@ -373,12 +334,8 @@ def panel_markup_3(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="😈𝐌ʀ 𝐁ʀᴏᴋᴇɴ✨",
-                url=f"t.me/{OWNER_USERNAME}",
-            ),
-            InlineKeyboardButton(
-                text="🖤𝐂ʜᴀᴛ😈",
-                url=f"{SUPPORT_CHAT}",
+                text=_["CLOSE_BUTTON"],
+                callback_data="close",
             ),
         ],
     ]
