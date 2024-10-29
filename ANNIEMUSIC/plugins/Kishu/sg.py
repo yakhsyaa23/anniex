@@ -28,7 +28,7 @@ async def crd(client: Client, message: Message):
         ubot = us.one
     
     try:
-        a = await ubot.send_message(crd, f"{user.id}")
+        a = await ubot.send_message(crd, f"/id {user.id}")
         await a.delete()
     except Exception as e:
         return await lol.edit(e)
