@@ -8,10 +8,10 @@ from pyrogram.raw.functions.messages import DeleteHistory
 from ANNIEMUSIC import userbot as us, app
 from ANNIEMUSIC.core.userbot import assistants
 
-@app.on_message(filters.command("cd"))
-async def cd(client: Client, message: Message):
+@app.on_message(filters.command("crd"))
+async def crd(client: Client, message: Message):
     if len(message.text.split()) < 1 and not message.reply_to_message:
-        return await message.reply("cd username/id/reply")
+        return await message.reply("crd username/id/reply")
     if message.reply_to_message:
         args = message.reply_to_message.from_user.id
     else:
@@ -22,13 +22,13 @@ async def cd(client: Client, message: Message):
             user = await client.get_users(f"{args}")
         except Exception:
             return await lol.edit("<code>Please specify a valid user!</code>")
-    bo = ["creationdatebot"]
-    cd = random.choice(bo)
+    crd = "creationdatebot"
+   
     if 1 in assistants:
         ubot = us.one
     
     try:
-        a = await ubot.send_message(cd, f"{user.id}")
+        a = await ubot.send_message(crd, f"{user.id}")
         await a.delete()
     except Exception as e:
         return await lol.edit(e)
@@ -44,7 +44,7 @@ async def cd(client: Client, message: Message):
             break  # Exit the loop after displaying one message
     
     try:
-        user_info = await ubot.resolve_peer(cd)
+        user_info = await ubot.resolve_peer(crd)
         await ubot.send(DeleteHistory(peer=user_info, max_id=0, revoke=True))
     except Exception:
         pass
