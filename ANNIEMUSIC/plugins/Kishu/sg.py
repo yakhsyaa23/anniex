@@ -22,13 +22,13 @@ async def crd(client: Client, message: Message):
             user = await client.get_users(f"{args}")
         except Exception:
             return await lol.edit("<code>Please specify a valid user!</code>")
-    crd = "creationdatebot"
+    crd = "regdate_clone_bot"
    
     if 1 in assistants:
         ubot = us.one
     
     try:
-        a = await ubot.send_message(crd, f"/id {user.id}")
+        a = await ubot.send_message(crd, f"{user.id}")
         await a.delete()
     except Exception as e:
         return await lol.edit(e)
